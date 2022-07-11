@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="160dp"
+    android:layout_height="300dp"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="8dp"
+   android:layout_margin="10dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        >
+        <ImageView
+            android:id="@+id/featured_image"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg1" />
+
+        <TextView
+            android:id="@+id/featured_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="High Way"
+            android:fontFamily="@font/baloo"
+            android:padding="1dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp" />
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rating="3.5"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            />
+        <TextView
+            android:id="@+id/featured_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="lorem ipsum delit sum aremi dummy casarabe dim" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
